@@ -49,10 +49,8 @@ function getParks(maxResults, states) {
 function watchForm() {
     $('form').submit(event => {
         event.preventDefault();
-        //const states = [];
         const maxResults = $('#js-max-results').val();
         const states = $('#js-states').val();
-        //states.push(stateCodes[$('#js-states').val()]);
         getParks(maxResults, states);
     });
 }
